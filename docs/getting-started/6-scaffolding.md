@@ -523,7 +523,7 @@ XXX The code below was yanked from an existing project, stripped down, morphed, 
     //
     void runCmd(string input, int player);
     typedef funcref<runCmd> runCmdRef;
-    struct cmd {
+    struct mkdocs_cmd {
         string cmd;
         string helptext;
         runCmdRef invoke;
@@ -532,7 +532,7 @@ XXX The code below was yanked from an existing project, stripped down, morphed, 
     };
     typedef structref<cmd> cmdRef;
 
-    static cmd[100] cmds;
+    static mkdocs_cmd[100] cmds;
     static int cmdCount;
 
     void registerChatCommand(string cmd, string helptext, bool needsInput, bool enabled, runCmdRef run) {
