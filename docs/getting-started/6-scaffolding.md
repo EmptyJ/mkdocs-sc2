@@ -676,7 +676,7 @@ XXX The code below was yanked from an existing project, stripped down, morphed, 
     static text colorBreak = StringToText("</c>");
 
     static void printMsg(text msg, int p, int t) {
-        if ( t == ge_MessageType_Debug ) {
+        if ( t == c_messageTypeDebug ) {
             TriggerDebugOutput(10, msg, false);
         } else {
             if ( p == c_playerAny ) {
