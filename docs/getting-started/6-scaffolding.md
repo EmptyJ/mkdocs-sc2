@@ -530,7 +530,7 @@ XXX The code below was yanked from an existing project, stripped down, morphed, 
         bool enabled;
         bool needsInput;
     };
-    typedef structref<cmd> cmdRef;
+    typedef structref<mkdocs_cmd> cmdRef;
 
     static mkdocs_cmd[100] cmds;
     static int cmdCount;
